@@ -1,4 +1,7 @@
 {
+  "env": {
+    "MAX_THINKING_TOKENS": "32000"
+  },
   "permissions": {
     "allow": [
       "Bash(python manage.py:*)",
@@ -22,20 +25,6 @@
     ]
   },
   "enableAllProjectMcpServers": false,
-  "extraKnownMarketplaces": {
-    "dimagi-claude-workflows": {
-      "source": {
-        "source": "github",
-        "repo": "dimagi/dimagi-claude-workflows"
-      }
-    }
-  },
-  "enabledPlugins": {
-    "dev-utils@dimagi-claude-workflows": true
-  },
-  "env": {
-    "MAX_THINKING_TOKENS": "32000"
-  },
   "hooks": {
     "SessionStart": [
       {
@@ -48,5 +37,17 @@
         ]
       }
     ]
+  },
+  "enabledPlugins": {
+    "dev-utils@dimagi-claude-workflows": true,
+    "superpowers@dimagi-claude-workflows": true
+  },
+  "extraKnownMarketplaces": {
+    "dimagi-claude-workflows": {
+      "source": {
+        "source": "github",
+        "repo": "dimagi/dimagi-claude-workflows"
+      }
+    }
   }
 }
