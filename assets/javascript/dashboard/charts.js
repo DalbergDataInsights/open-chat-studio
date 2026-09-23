@@ -104,6 +104,7 @@ export class ChartManager {
                 ...this.defaultOptions.scales,
                 y: {
                     ...this.defaultOptions.scales.y,
+                    ticks: {...this.defaultOptions.scales.y.ticks, precision: 0},
                     title: {
                         display: true,
                         text: 'Number of Participants'
@@ -151,6 +152,7 @@ export class ChartManager {
                 ...this.defaultOptions.scales,
                 y: {
                     ...this.defaultOptions.scales.y,
+                    ticks: {...this.defaultOptions.scales.y.ticks, precision: 0},
                     title: {
                         display: true,
                         text: 'Number of Sessions'
@@ -208,6 +210,7 @@ export class ChartManager {
                 ...this.defaultOptions.scales,
                 y: {
                     ...this.defaultOptions.scales.y,
+                    ticks: {...this.defaultOptions.scales.y.ticks, precision: 0},
                     title: {
                         display: true,
                         text: 'Number of Messages'
@@ -392,6 +395,7 @@ export class ChartManager {
                 },
                 y: {
                     ...this.defaultOptions.scales.y,
+                    ticks: {...this.defaultOptions.scales.y.ticks, precision: 0},
                     title: {
                         display: true,
                         text: 'Number of Sessions'
